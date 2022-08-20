@@ -11,15 +11,8 @@ export class EventComponent implements OnInit {
   constructor(private socketService: SocketService) {}
 
   ngOnInit(): void {
-    this.requestActiveEvents();
   }
 
-  async requestActiveEvents() {
-    this.socketService.getActiveEvents().then((data) => {
-      data.subscribe((events) => {
-        console.log(events);
-      });
-    });
-  }
+
 
 }

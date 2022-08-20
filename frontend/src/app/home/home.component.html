@@ -1,1 +1,21 @@
-<p>home works!</p>
+<p-card header="Keine laufenden Events" *ngIf="events.length === 0">
+    <p>
+        Aktuell finden keine Events statt.
+        Unter <a class="clickable" (click)="openPage('event')"><b>Events</b></a> kannst Du vergangene und
+        zukünftige
+        Turniere einsehen.
+    </p>
+</p-card>
+
+<p-card [header]=event.name class="clickable" *ngFor="let event of events">
+    <b>Start:</b> {{event.dateStart | date: "dd.MM.yy HH:mm"}} Uhr
+    <br>
+    <b>Ende:</b> {{event.dateEnd | date: "dd.MM.yy HH:mm"}} Uhr
+    <ng-container *ngIf="event.location">
+        <p><b>Ort:</b> {{event.location}}</p>
+    </ng-container>
+    <ng-container *ngIf="event.details">
+        <p><b>Details:</b> {{event.details}}</p>
+    </ng-container>
+
+</p-card>

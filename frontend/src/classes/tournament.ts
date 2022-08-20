@@ -1,8 +1,14 @@
+import { IGame } from "./game";
+import { IPlayer } from "./player";
+
 export interface ITournament {
     id: number;
     name: string;
     date: Date;
     settings: TournamentSettings;
+    games: IGame[];
+    players: IPlayer[];
+    inProgress: boolean;
 }
 
 

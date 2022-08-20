@@ -1,1 +1,29 @@
-<p>login works!</p>
+<p-toast position="top-center"></p-toast>
+
+
+<div class="container">
+    <h1>Login</h1>
+    <div class="grid p-fluid">
+        <div class="col-12 md:col-6">
+            <div class="p-inputgroup">
+                <span class="p-inputgroup-addon"><i class="pi pi-user"></i></span>
+                <input type="text" [(ngModel)]="username" pInputText placeholder="Nutzername" #usernameInput>         
+            </div>
+        </div>
+        
+        <div class="col-12 md:col-6">
+            <div class="p-inputgroup">
+                <span class="p-inputgroup-addon"><i class="pi pi-key"></i></span>
+                <p-password placeholder="Passwort" [feedback]="false" [(ngModel)]="password" [toggleMask]="true"></p-password>
+            </div>
+        </div>
+    
+        <div class="col-12 md:col-6">
+            <button pButton type="button" label="Login" (click)="login()" #loginButton></button>
+        </div>
+        <div class="col-12 md:col-6">
+            <button class="p-button-outlined" pButton type="button" label="Registrieren" (click)="register()" #registerButton></button>
+        </div>
+    </div>
+</div>
+

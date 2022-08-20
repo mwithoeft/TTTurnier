@@ -1,0 +1,20 @@
+[
+    {
+        "id": "923cae38-362c-4ec2-b5ee-e45a2296fb18",
+        "username": "asmassasino",
+        "password": "$2b$10$ZVNno2BLrMqzwiyjoMP1b.z8oz58pCdokSFzpgVujZJuV.NUjxSoa",
+        "events": []
+    },
+    {
+        "id": "fb7919d3-cafb-4ebf-8a36-6aaf5bf915ff",
+        "username": "peter",
+        "password": "$2b$10$G5gYIlr3Azx62WZipiSho.57q5.NdbZ9mF46GRlLFTBCXnQuTxG/2",
+        "events": []
+    },
+    {
+        "id": "7a801111-13de-4094-9f8c-8954e7e0acdd",
+        "username": "dfsfs",
+        "password": "$2b$10$aWVJnXtrw0G4UZKE2SpNcO2eXpTqm2kViopV8FM5nPtaoAjgMRzPq",
+        "events": []
+    }
+]
